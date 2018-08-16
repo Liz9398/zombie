@@ -1,0 +1,13 @@
+[{
+    "group":"invitado",
+    "permissions": [{
+        "resource":"login",
+        "methods":["GET","POST"],
+        "action":"allow"
+    },
+    {
+    "resource":"signup",
+    "methods":["GET","POST","PUT"],
+    "action":"allow"
+    }]
+}]
