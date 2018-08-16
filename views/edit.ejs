@@ -1,0 +1,16 @@
+<% include _header %>
+<h1>Actualiza tu perfil</h1>
+<form action="/edit" method="post">
+    <div class="form-group">
+        <input name="displayName" type="text" class="form-control" placeholder="Nombre para mostrar" 
+        value= "<%= currentZombie.displayName || "" %>" />
+    </div>
+    <div class="form-group">
+        <textarea name="bio" class="form-control" placeholder="Platicanos algo acerca de ti">
+            <% = currentZombie.bio || "" %>
+        </textarea>
+    </div>
+    <input type="submit" value="Actualizar" class="btn btn-primary btn-block" />
+</form>
+
+<% include _footer %>
